@@ -24,5 +24,5 @@ app_name = 'raulchirinos'
 urlpatterns = [
     url(r'^admin/', admin.site.urls, name='admin-site'),
     url(r'^$', ListView.as_view(model=Post, template_name='raulchirinos/index.html'), name='index'),
-    url(r'^details/(?P<pk>[0-9]+)/$', DetailView.as_view(model=Post, template_name='raulchirinos/post_details.html'), name='post_details'),
+    url(r'^details/(?P<pk>[0-9]+)/$', DetailView.as_view(model=Post, template_name='raulchirinos/post_template/post.html'), name='post_details'),
 ]
