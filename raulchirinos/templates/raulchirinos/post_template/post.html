@@ -11,10 +11,12 @@
     <title>{{object.title}}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'raulchirinos/bootstrap.min.css' %}" />
 
     <!-- Custom styles for this template -->
-    <link href="css/blog-post.css" rel="stylesheet">
+    <link href="{% static 'raulchirinos/blog-post.css' %}" rel="stylesheet">
 
   </head>
 
@@ -68,7 +70,7 @@
           <hr>
 
           <!-- Date/Time -->
-          <p>Posted on January 1, 2018 at 12:00 PM</p>
+          <p>{{object.date}}</p>
 
           <hr>
 

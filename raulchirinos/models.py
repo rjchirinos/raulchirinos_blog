@@ -17,6 +17,7 @@ class Post(models.Model):
     body = models.TextField(max_length=200000)
     tags = models.ManyToManyField(Tag)
     author = models.CharField(max_length=255, default='Raúl Chirinos')
+    date = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):
         return self.title
