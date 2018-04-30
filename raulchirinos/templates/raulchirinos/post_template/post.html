@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Raúl Chirinos</a>
+        <a id='blog_title' href="/" class="navbar-brand" href="#">Raúl Chirinos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,20 +67,18 @@
           <h1 id='post_title' class="mt-4">{{object.title}}</h1>
 
           <!-- Author -->
-          <p class="lead">
+          <p id='post_date' class="lead">
             by
             <a href="#">{{object.author}}</a>
           </p>
 
-          <hr>
-
           <!-- Date/Time -->
-          <p>{{object.date}}</p>
+          <p id='post_date' >{{object.date}}</p>
 
           <hr>
 
           <!-- Post Content -->
-          <p id='post_body'>{{object.body}}</p>
+          <p id='post_body'>{{object.formatted_markdown|safe}}</p>
 
           <!-- Comments Form -->
           <div class="card my-4">

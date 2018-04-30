@@ -18,3 +18,29 @@ body {
     font-family: 'Copse', serif;
     font-size: 40px
 }
+
+#post_body {
+    font-family: 'Slabo+27px', serif;
+    font-size: 20px
+}
+
+#post_date {
+    font-family: 'Slabo+27px', serif;
+    font-size: 14px
+}
+
+a{
+    color: #016b00
+}
+
+.bg-dark {
+  background-color: #016b00 !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+
+#blog_title{
+    font-family: 'Copse', serif;
+}

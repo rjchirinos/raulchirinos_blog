@@ -2,9 +2,19 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from django import forms
+from django.db import models
+
+from markdownx.admin import MarkdownxModelAdmin
+from markdownx.widgets import AdminMarkdownxWidget
 
 from .models import Post, Tag
 
-admin.site.register(Post)
+
+class MyModelAdmin(admin.ModelAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': AdminMarkdownxWidget},
+    }
+
+
+admin.site.register(Post, MyModelAdmin)
 admin.site.register(Tag)
