@@ -13,3 +13,8 @@ body {
     padding-top: 56px;
   }
 }
+
+#post_title {
+    font-family: 'Copse', serif;
+    font-size: 40px
+}

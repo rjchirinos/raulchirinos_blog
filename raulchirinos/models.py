@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django_markdown.models import MarkdownField
 
 
 class Tag(models.Model):
@@ -14,7 +15,7 @@ class Tag(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
-    body = models.TextField(max_length=200000)
+    body = models.TextField(max_length=2000000)
     tags = models.ManyToManyField(Tag)
     author = models.CharField(max_length=255, default='Raúl Chirinos')
     date = models.DateTimeField(auto_now_add=True, blank=True)

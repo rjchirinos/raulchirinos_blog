@@ -3,6 +3,11 @@
 
   <head>
 
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Copse|Slabo+27px" rel="stylesheet">
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -59,7 +64,7 @@
         <div class="col-lg-8">
 
           <!-- Title -->
-          <h1 class="mt-4">{{object.title}}</h1>
+          <h1 id='post_title' class="mt-4">{{object.title}}</h1>
 
           <!-- Author -->
           <p class="lead">
@@ -75,7 +80,7 @@
           <hr>
 
           <!-- Post Content -->
-          {{object.body}}
+          <p id='post_body'>{{object.body}}</p>
 
           <!-- Comments Form -->
           <div class="card my-4">

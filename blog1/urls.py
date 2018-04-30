@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.urls import include, path
 from django.contrib import admin
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
@@ -22,6 +23,7 @@ from raulchirinos.models import Post
 
 app_name = 'raulchirinos'
 urlpatterns = [
+    url('^markdown/', include('django_markdown.urls')),
     url(r'^admin/', admin.site.urls, name='admin-site'),
     url(r'^$', ListView.as_view(model=Post, template_name='raulchirinos/index.html'), name='index'),
     url(r'^details/(?P<pk>[0-9]+)/$', DetailView.as_view(model=Post, template_name='raulchirinos/post_template/post.html'), name='post_details'),
