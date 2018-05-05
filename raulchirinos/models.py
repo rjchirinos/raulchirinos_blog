@@ -21,6 +21,9 @@ class Post(models.Model):
     author = models.CharField(max_length=255, default='Raúl Chirinos')
     date = models.DateTimeField(auto_now_add=True, blank=True)
 
+    class Meta:
+        ordering = ['-date']
+
     @property
     def formatted_markdown(self):
         return markdownify(self.body)
