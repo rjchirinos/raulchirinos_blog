@@ -45,3 +45,7 @@ a{
 #blog_title{
     font-family: 'Copse', serif;
 }
+
+.col-lg-8{
+  margin: auto;
+}
