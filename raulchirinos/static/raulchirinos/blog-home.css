@@ -15,17 +15,18 @@ body {
 }
 
 #post_title {
-    font-family: 'Copse', serif;
-    font-size: 36px
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #post_body {
-    font-family: 'Slabo+27px', serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 16px
 }
 
 #foot_page{ 
-    font-family: 'Slabo+27px', serif;
+    font-family: 'Jura', sans-serif;
     font-size: 12px   
 }
 
