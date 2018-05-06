@@ -14,6 +14,11 @@ body {
   }
 }
 
+a:link, a:visited, a:hover, a:active{
+    color: #016b00;
+    text-decoration: none;
+}
+
 #post_title {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -30,18 +35,15 @@ body {
     font-size: 12px   
 }
 
-a{
-    color: #016b00
-}
-
 #blog_title{
     font-family: 'Copse', serif;
 }
 
 .btn {
-    font-family: 'Slabo+27px', serif;
+    float: right;
+    font-family: 'Open+Sans', sans-serif;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -51,17 +53,24 @@ a{
     user-select: none;
     border: 1px solid transparent;
     padding: 0.1875rem 0.375rem;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-primary {
-  color: #fff;
+  color: #fff !important;
   background-color: #b6b6b6;
   border-color: #b6b6b6;
 }
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #016b00;
+  border-color: #b6b6b6;
+}
+
 
 .bg-dark {
   background-color: #016b00 !important;

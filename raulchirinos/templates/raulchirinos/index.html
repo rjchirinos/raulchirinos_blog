@@ -12,7 +12,7 @@
 
     <!-- Google Fonts -->
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
 
     <!-- Bootstrap core CSS -->
@@ -67,9 +67,9 @@
           {% for blog in object_list %}
             <div class="card mb-4">
               <div class="card-body">
-                <h4 id="post_title" class="card-title">{{blog.title}}</h2>
+                <h4> <a href="post/{{blog.slug}}" id="post_title" class="card-title">{{blog.title}}</a>  </h4>
                 <div id="post_body" class="card-text">{{blog.formatted_markdown|safe}}</div>
-                <a href="details/{{blog.id}}" class="btn btn-primary">Read More</a>
+                <a href="post/{{blog.slug}}" class="btn btn-primary">Read More</a>
               </div>
               <div class="card-footer text-muted">
                 <p id="foot_page">{{blog.date}}</p>
