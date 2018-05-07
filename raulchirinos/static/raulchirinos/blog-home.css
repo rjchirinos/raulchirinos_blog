@@ -23,6 +23,7 @@ a:link, a:visited, a:hover, a:active{
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: bold;
+    color: black;
 }
 
 #post_body {
@@ -36,7 +37,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 #blog_title{
-    font-family: 'Copse', serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .btn {
