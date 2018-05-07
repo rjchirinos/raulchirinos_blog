@@ -7,7 +7,7 @@ Actually I don't want to have a blog and I don't really want to publish things o
 
 I'm just trying to learn Django a little bit everyday.
 
-## Can I take a look
+## Can I take a look?
 Of course, but... How I'm not sopposed to make a public blog I don't have this hosted in any server, so you'll have to run the server by yourself
 
 I make it easy for you because I make an environment for this project, so you don't have to install nothing.
