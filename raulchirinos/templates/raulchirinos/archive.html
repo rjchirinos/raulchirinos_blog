@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'raulchirinos/bootstrap.min.css' %}" />
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'raulchirinos/blog-post.css' %}" rel="stylesheet">
+    <link href="{% static 'raulchirinos/archive.css' %}" rel="stylesheet">
 
   </head>
 
@@ -61,35 +61,15 @@
 
         <!-- Post Content Column -->
         <div class="col-lg-8">
-
-          <!-- Title -->
-          <h1 id='post_title' class="mt-4">{{object.title}}</h1>
-
-          <!-- Author -->
-          <p id='post_date' class="lead">
-            by
-            <a href="#">{{object.author}}</a>
-          </p>
-
-          <!-- Date/Time -->
-          <p id='post_date' >{{object.date}}</p>
-
-          <hr>
-
-          <!-- Post Content -->
-          <div id='post_body'>{{object.formatted_markdown|safe}}</div>
-
-          <!-- Comments Form -->
-          <div class="card my-4">
-            <h5 class="card-header">Leave a Comment:</h5>
-            <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
+          <h1 id='archive-title'>Archive</h1>         
+          <div id='post-list'>
+            <ul>
+              {% for post in object_list %}
+                <li>
+                  <a href="/post/{{post.slug}}">{{post.title}}</a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
