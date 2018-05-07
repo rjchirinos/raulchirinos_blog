@@ -15,7 +15,7 @@ body {
 }
 
 #blog_title{
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source+Code+Pro', monospace;
 }
 
 #post_title {
@@ -45,11 +45,6 @@ a{
 .navbar-dark .navbar-brand {
   color: #ffffff;
 }
-
-#blog_title{
-    font-family: 'Copse', serif;
-}
-
 .col-lg-8{
   margin: auto;
 }
