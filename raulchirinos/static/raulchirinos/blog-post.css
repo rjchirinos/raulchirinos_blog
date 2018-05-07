@@ -14,18 +14,23 @@ body {
   }
 }
 
+#blog_title{
+    font-family: 'Source+Code+Pro', monospace;
+}
+
 #post_title {
-    font-family: 'Copse', serif;
-    font-size: 40px
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #post_body {
-    font-family: 'Slabo+27px', serif;
-    font-size: 20px
-}
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 16px;
+  }
 
 #post_date {
-    font-family: 'Slabo+27px', serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 14px
 }
 
@@ -40,7 +45,6 @@ a{
 .navbar-dark .navbar-brand {
   color: #ffffff;
 }
-
-#blog_title{
-    font-family: 'Copse', serif;
+.col-lg-8{
+  margin: auto;
 }

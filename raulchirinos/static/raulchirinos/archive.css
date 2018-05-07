@@ -1,0 +1,43 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+footer {
+   position: fixed;
+   bottom:0;
+   width:100%;
+   height:60px;
+}
+
+a:link, a:visited, a:hover, a:active{
+    color: #016b00;
+    text-decoration: none;
+}
+
+#blog_title{
+    font-family: 'Source+Code+Pro', monospace;
+}
+
+#archive-title{
+  margin: absolute;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.bg-dark {
+  background-color: #016b00 !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+.col-lg-8{
+  margin: auto;
+}
